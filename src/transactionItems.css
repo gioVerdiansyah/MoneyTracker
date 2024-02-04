@@ -1,0 +1,17 @@
+li {
+    position: relative;
+}
+
+li::before {
+    content: "X";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+li:hover::before {
+    opacity: 1;
+}
