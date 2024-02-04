@@ -70,7 +70,7 @@ export default function AddTransactionComponent(props) {
                 <div className="row">
                     <div className="col-12 col-md-3 col-lg-2 mb-3">
                         <label htmlFor="tanggal" className="form-label">Tanggal</label>
-                        <input type="text" id="tanggal" name="tanggal"
+                        <input type="date" id="tanggal" name="tanggal"
                             placeholder="dd/mm/yyy"
                             className={`form-control ${errorInput.tanggal && 'is-invalid'}`} defaultValue={format(new Date(), 'yyyy-MM-dd')} />
                         {errorInput.tanggal &&
