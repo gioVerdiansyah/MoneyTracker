@@ -8,8 +8,6 @@ function App() {
 
     const [dataTransaction, setDataTransaction] = React.useState([]);
 
-    console.log(dataTransaction);
-
     const handleAddTransaction = (data) => {
         setDataTransaction((ps) => ([...ps, data]));
     };
